@@ -6,6 +6,18 @@
 * {
   box-sizing: border-box;
 }
+      
+.box {
+  float: left;
+  width: 11.11%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 body {
   font-family: verdana;
@@ -36,7 +48,8 @@ body {
 }
 
 .topnav a {
-  float: center;
+  float: left;
+  width: 11.11%;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -114,7 +127,7 @@ body {
 </div>
 
 <div class="topnav">
-  <a href="#"> Clubs </a>
+  <a href="#" style="float:left"> Clubs </a>
   <a href="#"> Internships </a>
   <a href="#"> Jobs </a>
   <a href="#"> Languages </a>

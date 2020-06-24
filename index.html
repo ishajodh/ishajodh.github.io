@@ -1,26 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <body style = "background-color:powderblue;">
+  <head>
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 40px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
+<body>
+
+<div class="header">
+  <h1> Isha Jodh </h1>
+</div>
+
+<div class="topnav">
+  <a href="#"> Clubs </a>
+  <a href="#"> Internships </a>
+  <a href="#"> Jobs </a>
+  <a href="#"> Languages </a>
+  <a href="#"> Programming Languages </a>
+  <a href="#"> Programs </a>
+  <a href="#"> Projects </a>
+  <a href="#"> Travel </a>
+  <a href="#" style="float:right"> Extra </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2> ABOUT ME </h2>
+      <h5> Currently a computer science student at the University of Washington in Seattle. </h5>
+      <div class="fakeimg" style="height:200px;"> Put prof pic </div>
+      <p> A short biography: </p>
+      <p> I'm currently pursuing a Bachelor's degree in Computer Science at UW Seattle, and trying to use CS to have a positive impact and do good in the world. 
+      I graduated from Skyline High School in Sammamish with my IB Diploma in 2019. I am a second degree black belt in Tae Kwon Do, martial arts instructor and math 
+      tutor, and was part of programs such as Girls Who Code, DECA, Washington Aerospace Scholars, and Rocketry Club in high school. In college, I've joined the Impact++, 
+      Engineers Without Borders, and Business Ethics Association RSOs at UW. I also enjoy traveling, hiking, baking, and drawing in my free time! </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2> Connect with Me: </h2>
+  <p> LinkedIn: /in/ishajodh, Instagram: @ishajodh, Facebook: Isha Jodh </p> 
+</div>
     
-    <h1 style = "font-family:verdana; background-color: #F1F1F1; text-align: center; padding: 20px;"> Isha Jodh </h1>
-    
-    <p style = "font-family:verdana;"> Clubs </p>
-    
-    <p style = "font-family:verdana;"> Internships </p>
-    
-    <p style = "font-family:verdana;"> Jobs </p>
-    
-    <p style = "font-family:verdana;"> Languages </p>
-    
-    <p style = "font-family:verdana;"> Programming Languages </p> 
-    
-    <p style = "font-family:verdana;"> Programs </p>
-    
-    <p style = "font-family:verdana;"> Projects </p>
-    
-    <p style = "font-family:verdana;"> Travel </p>
-    
-    <p style = "font-family:verdana;"> Extra </p>
-    
-  </body>
+</body>
 </html>

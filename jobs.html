@@ -1,9 +1,198 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+      
+.box {
+  float: left;
+  width: 100%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: verdana;
+  padding: 20px;
+  background: powderblue;
+}
+
+.header {
+  font-family: verdana;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: verdana;
+}
+ 
+.header h2 {
+  font-family: verdana;
+  padding: 20 px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: auto;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  font-family: verdana;
+}
+
+.rightcolumn {
+  float: right;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-family: verdana;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  font-family: verdana;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: verdana;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  font-family: verdana;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="header">
+  <h1> Jobs </h1>
+</div>
 
+<div class="topnav">
+  <a href="index.html" title = "Home"> Go Back to Home Page </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> COMPUTER SCIENCE INSTRUCTOR </h2>
+      <h5 style = "font-family:verdana;"> I taught the basics of computer science to students in the state of Washington. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role at Coding with Kids: </p>
+      <p style="font-family:verdana;"> I will start this position in Summer 2020. Due to the global pandemic, these classes will be taught 
+      online through Zoom, where I will teach young students the basics of python and work with them in scratch to create simple, fun projects. </p>
+      <p style="font-family:verdana;"> Link to company's website: https://www.codingwithkids.com/ </p> 
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> MARTIAL ARTS HEAD INSTRUCTOR </h2>
+      <h5 style = "font-family:verdana;"> I taught Tae Kwon Do and Modern Arnis to students of all ages and backgrounds for 5 years. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role at True Martial Arts: </p>
+      <p style="font-family:verdana;"> From 2014 to 2019, I was a head instructor at True Martial Arts and taught classes and lessons to 
+      many different students. I also worked with and trained my assistant instructors, and led students in summer camps. I also taught a 
+      class designed specifically for students with mental and/or physical disabilities, such as autism, down syndrome, and dyslexia. Additionally, I
+      achieved my own 2nd Degree Black Belt in Tae Kwon Do and Modern Arnis here. </p>
+      <p style="font-family:verdana;"> Link to our school's website: https://www.truemartialarts.com/ </p> 
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> MATHEMATICS TUTOR </h2>
+      <h5 style = "font-family:verdana;"> I worked as a math and reading tutor at the Tutoring Center of Sammamish. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role at the Tutoring Center: </p>
+      <p style="font-family:verdana;"> In the summer of 2019, I worked here as a math and reading tutor for students of 
+       all ages. I managed lessons and helped with their class content, and assisted in assessments for new students. </p>
+      <p style="font-family:verdana;"> Link to company's website: https://www.manta.com/c/mx5vs5f/the-tutoring-center-sammamish-wa </p> 
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> CHIPOTLE CREW MEMBER </h2>
+      <h5 style = "font-family:verdana;"> I worked as a crew member at the Chipotle in Redmond. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role at Chipotle: </p>
+      <p style="font-family:verdana;"> I will likely start this role in July 2020. </p>
+      <p style="font-family:verdana;"> Link to company's website: https://www.chipotle.com/ </p> 
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="font-family:verdana;"> Other Minor Jobs: </h2>
+  <p style="font-family:verdana;"> I have temporarily worked as a babysitter and petsitter and watched kids and pets in my neighborhood, and taken care 
+  of my neighbor's plants in summers. </p> 
+</div>
+    
 </body>
 </html>

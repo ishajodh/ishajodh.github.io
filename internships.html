@@ -1,9 +1,171 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+      
+.box {
+  float: left;
+  width: 100%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: verdana;
+  padding: 20px;
+  background: powderblue;
+}
+
+.header {
+  font-family: verdana;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: verdana;
+}
+ 
+.header h2 {
+  font-family: verdana;
+  padding: 20 px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: auto;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  font-family: verdana;
+}
+
+.rightcolumn {
+  float: right;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-family: verdana;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  font-family: verdana;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: verdana;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  font-family: verdana;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="header">
+  <h1> Internships </h1>
+</div>
 
+<div class="topnav">
+  <a href="index.html" title = "Home"> Go Back to Home Page </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> ANGEL AID INTERNSHIP </h2>
+      <h5 style = "font-family:verdana;"> A software engineering and business internship at a non-profit partnered with Microsoft and Google. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role in Angel Aid: </p>
+      <p style="font-family:verdana;"> My internship starts in late June 2020. I will be doing software development work, learning skills needed 
+      to run a successful business, and participating in the 2020 Microsoft Hackathon. </p>
+      <p style="font-family:verdana;"> Link to company's website: https://www.angelaidcares.org/ </p> 
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> GIRLS ROCK MATHEMATICS INTERNSHIP </h2>
+      <h5 style = "font-family:verdana;"> A internship focused on inspiring young girls to pursue mathematics and other STEM fields in Seattle public schools. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role in GRM: </p>
+      <p style="font-family:verdana;"> In the summer of 2018, I was an intern at GRM in the University District of Seattle. I was a mentor and counselor to 
+      a diverse group of young girls, and organized math and art projects for them while motivating them to pursue STEM. </p>
+      <p style="font-family:verdana;"> Link to company's website: https://www.girlsrockmathematics.com/ </p> 
+    </div>
+  </div>
+</div>
+  
+
+<div class="footer">
+  <h2 style="font-family:verdana;"> Other Minor Internships: </h2>
+  <p style="font-family:verdana;"> Before becoming a martial arts instructor, I spent a few months as an intern instructor. Additionally, before I taught a 
+  martial arts class designed for students with mental and/or physical disabilities, I was an intern and assisted in teaching multiple students with down syndrome,
+  autism, and dyslexia in the Special Needs Advancement Program (SNAP) at True Martial Arts. </p> 
+</div>
+    
 </body>
 </html>

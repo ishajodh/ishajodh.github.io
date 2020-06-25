@@ -1,9 +1,193 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+      
+.box {
+  float: left;
+  width: 100%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: verdana;
+  padding: 20px;
+  background: powderblue;
+}
+
+.header {
+  font-family: verdana;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: verdana;
+}
+ 
+.header h2 {
+  font-family: verdana;
+  padding: 20 px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: auto;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  font-family: verdana;
+}
+
+.rightcolumn {
+  float: right;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-family: verdana;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  font-family: verdana;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: verdana;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  font-family: verdana;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="header">
+  <h1> Languages </h1>
+</div>
 
+<div class="topnav">
+  <a href="index.html" title = "Home"> Go Back to Home Page </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> ENGLISH </h2>
+      <h5 style = "font-family:verdana;"> Fluent, can read/write/speak at a high level. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> Additional Details: </p>
+      <p style="font-family:verdana;"> I also took IB English HL for 2 years in high school, and have written many essays, speeches, letters, and research 
+      papers in English. </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> SPANISH </h2>
+      <h5 style = "font-family:verdana;"> Fluent, can read/write/speak at an intermediate level. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> Additional Details: </p>
+      <p style="font-family:verdana;"> I learned Spanish in school for 4 years, and also took IB Spanish SL in high school. In my classes, I wrote, read, spoke, 
+      and listened to a lot of texts in Spanish and had conversations with native and non-native speakers for fun and to learn more. </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> MARATHI </h2>
+      <h5 style = "font-family:verdana;"> Can understand at an intermediate level and speak at a basic level. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> Additional Details: </p>
+      <p style="font-family:verdana;"> Marathi is my parents' native language and so I grew up listening to and understanding it, and this has continued
+      throughout my life. </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> GERMAN </h2>
+      <h5 style = "font-family:verdana;"> Beginner, self learning to read/write/speak German. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> Additional Details: </p>
+      <p style="font-family:verdana;"> In June 2020, I decided to start self learning German due to my desire to keep learning new languages, because there are
+      a lot of engineering companies in Germany, and because I wanted to use my time during a pandemic usefully. I am using duolingo to learn, and hope to speak to 
+      some of my friends who are native German speakers soon. </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="font-family:verdana;"> Languages I'd like to learn in the future: </h2>
+  <p style="font-family:verdana;"> Mandarin, French, Arabic </p> 
+</div>
+    
 </body>
 </html>

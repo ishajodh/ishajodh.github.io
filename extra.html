@@ -1,9 +1,197 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+      
+.box {
+  float: left;
+  width: 100%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: verdana;
+  padding: 20px;
+  background: powderblue;
+}
+
+.header {
+  font-family: verdana;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: verdana;
+}
+ 
+.header h2 {
+  font-family: verdana;
+  padding: 20 px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: auto;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  font-family: verdana;
+}
+
+.rightcolumn {
+  float: right;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-family: verdana;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  font-family: verdana;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: verdana;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  font-family: verdana;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="header">
+  <h1> Extra </h1>
+</div>
 
+<div class="topnav">
+  <a href="index.html" title = "Home"> Go Back to Home Page </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> AWARDS AND ACCOMPLISHMENTS </h2>
+      <h5 style = "font-family:verdana;"> Some awards I've received and accomplishments so far. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> A Summary: </p>
+      <p style="font-family:verdana;"> IB Diploma Recipient </p>
+      <p style="font-family:verdana;"> 2nd Degree Black Belt in Tae Kwon Do and Modern Arnis </p>
+      <p style="font-family:verdana;"> Team America Rocketry Challenge 2017 National Finalist </p>
+      <p style="font-family:verdana;"> International DECA (ICDC) 2019 Competition Qualifier and Competitor </p>
+      <p style="font-family:verdana;"> Sammamish Rotary Club 2019 November Student of the Month - Mathematics  </p>
+      <p style="font-family:verdana;"> True Martial Arts Senior Scholarship Recipient 2019 </p>
+      <p style="font-family:verdana;"> UW Dean's List 2019-2020 </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> ADDITIONAL SKILLS </h2>
+      <h5 style = "font-family:verdana;"> Some more skills I've acquired so far. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> A summary: </p>
+      <p style="font-family:verdana;"> Leadership - through different clubs, jobs, projects, and programs, I've been able to serve in various 
+      leadership roles, as an instructor, tutor, teacher, president and other board positions in clubs, where I've learned a lot about myself 
+      and how to best be a leader for other people. </p>
+      <p style="font-family:verdana;"> Management - through my roles in leardership positions and experience with organizing and planning events
+      and projects, I've picked up management skills and like facilitating and assigning people to the best suited position. </p>
+      <p style="font-family:verdana;"> Teamwork - through working in many team settings, I've come to really enjoy teamwork and completing projects 
+      with others, as we can all learn from each other and bring various skills to the table. </p>
+      <p style="font-family:verdana;"> Interpersonal Abilities - through working with several people of all ages, backgrounds, abilities, and skills, 
+      and traveling a lot, I feel that I've gained a stronger sense of empathy, compassion, communication, and caring about others and the world. </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> FUN FACTS </h2>
+      <h5 style = "font-family:verdana;"> Here are some random fun facts about me. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> A list in no particular order: </p>
+      <p style="font-family:verdana;"> I have a large german shepherd named Simba. </p>
+      <p style="font-family:verdana;"> I've flown a helicopter before. </p>
+      <p style="font-family:verdana;"> I've been journaling for the past 2 years. </p>
+      <p style="font-family:verdana;"> I enjoy making and completing to-do lists. </p>
+      <p style="font-family:verdana;"> I really like sunsets. </p>
+      <p style="font-family:verdana;"> I enjoy ziplining, roller coasters, indoor skydiving, and other adventurous activities. </p>
+      <p style="font-family:verdana;"> I learned how to play several musical instruments like the piano, violin, and cello. </p>
+      <p style="font-family:verdana;"> I've always been really curious about space and the oceans. </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="font-family:verdana;"> This is the last page of my website: </h2>
+  <p style="font-family:verdana;"> Hope you enjoyed and learned more about me! </p> 
+</div>
+    
 </body>
 </html>

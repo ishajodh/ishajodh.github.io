@@ -1,9 +1,197 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+      
+.box {
+  float: left;
+  width: 100%;
+  padding: 50px;
+}
+      
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: verdana;
+  padding: 20px;
+  background: powderblue;
+}
+
+.header {
+  font-family: verdana;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: verdana;
+}
+ 
+.header h2 {
+  font-family: verdana;
+  padding: 20 px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: auto;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  font-family: verdana;
+}
+
+.rightcolumn {
+  float: right;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  font-family: verdana;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  font-family: verdana;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: verdana;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  font-family: verdana;
+}
+      
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+  
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="header">
+  <h1> Programs </h1>
+</div>
 
+<div class="topnav">
+  <a href="index.html" title = "Home"> Go Back to Home Page </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> GOOGLE UNIVERSITY PROGRAM </h2>
+      <h5 style = "font-family:verdana;"> A summer program with Google focused on mentorship, interview prep, and workshops. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role in this program: </p>
+      <p style="font-family:verdana;"> I am completing this program in Summer 2020. </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> GIRLS WHO CODE SUMMER IMMERSION PROGRAM </h2>
+      <h5 style = "font-family:verdana;"> A 7 week summer program focused on learning computer science and more about women in CS. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role in this program: </p>
+      <p style="font-family:verdana;"> I completed this program in the summer of 2017, and I learned the basics of Python and HTML/CSS here. 
+       I completed some smaller individual projects and games, and in the last two weeks my team and I built a fully functioning app that compiles
+       congressional bills and the contact information of political representatives so that users can be more easily engaged in their communities. Link
+       to the App: https://billapp-3f115.firebaseapp.com/ </p>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> WASHINGTON AEROSPACE SCHOLARS PROGRAM </h2>
+      <h5 style = "font-family:verdana;"> A program focused on aerospace and space education, as well as community engagement. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role in this program: </p>
+      <p style="font-family:verdana;"> I was a scholar for 2 years in this program, where I completed many assignments, projects, essays, and presentations
+      for 5 college credits while I was in high school. I also got to participate in the summer experience, where we built and programmed rovers, pitched
+      a business idea, and learned more about aerospace at the Museum of Flight. </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style = "font-family:verdana;"> TEAM AMERICA ROCKETRY CHALLENGE </h2>
+      <h5 style = "font-family:verdana;"> A competition program focused on launching and safely landing model rockets. </h5>
+      <div class="fakeimg" style="height:200px; font-family:verdana;"> pic </div>
+      <p style="font-family:verdana;"> My role in this program: </p>
+      <p style="font-family:verdana;"> My team and I participated in this competition for 2 years in high school. We built and launched many model
+      rockets in this time, and designed them differently based on the year's requirements. In 2017, we qualified for the National Competition in 
+      Washington D.C. and placed as National Finalists. </p>
+    </div>
+  </div>
+</div>
+  
+<div class="footer">
+  <h2 style="font-family:verdana;"> Other Minor Programs: </h2>
+  <p style="font-family:verdana;"> I was also part of the DECA Mentors Program in high school, where I was a mentor to 2 students new to DECA. Additionally, 
+  I was part of the IB Buddies Program, where I was a mentor for juniors in high school who were about to start their own IB Diploma journey. Finally, I 
+  am part of the Big/Little Program at the Allen School at UW, where I am receiving mentorship from students older than me. </p> 
+</div>
+    
 </body>
 </html>
